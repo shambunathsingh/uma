@@ -42,6 +42,7 @@
                     </ul>
                 </nav>
             </div>
+            <img src="assets/images/menu.png" class="menu-icon" onclick="togglemenu()">
         </div>
     </header>
     <!-- header section end -->
@@ -66,15 +67,15 @@
     <!-- contact section -->
     <section class="contact-section">
         <div class="container">
-            <div class="call">
+            <div class="contact-detail call">
                 <h3>Call Us 24/7</h3>
                 <p>+91-1234-567-890</p>
             </div>
-            <div class="address">
+            <div class="contact-detail address">
                 <h3>Cuttack</h3>
                 <p>Chhatrabazaar</p>
             </div>
-            <div class="time">
+            <div class="contact-detail time">
                 <h3>Working Hours</h3>
                 <p>Open 24hrs</p>
             </div>
@@ -93,9 +94,7 @@
                 <h1><span>About</span> U.M.A</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eaque, facilis impedit
                     perspiciatis quisquam autem est! Sit ad cum enim, deleniti aliquid, sint sequi voluptatibus eius
-                    laboriosam accusantium velit repellendus? Minus ullam perferendis illo error placeat impedit, harum
-                    accusantium molestiae voluptate suscipit sed architecto quaerat ab aliquam debitis veniam nesciunt
-                    cupiditate aliquid quia modi.</p>
+                    laboriosam accusantium.</p>
             </div>
         </div>
     </section>
@@ -108,7 +107,7 @@
     <section class="program-section">
         <div class="programBox">
             <h1>Our Programs</h1>
-            <span class="underline"></span>
+            <hr>
             <div class="programBatch">
                 <div class="p1">
                     <div class="imgBox">
@@ -149,9 +148,6 @@
     <!-- program section end -->
 
 
-    <!-- counter section start -->
-
-    <!-- counter section end -->
 
 
     <!-- testimonial section -->
@@ -256,14 +252,6 @@
 
 
 
-    <!-- instructor section start -->
-    <section class="instructor-section">
-
-    </section>
-    <!-- instructor section end -->
-
-
-
 
     <!-- Footer -->
     <!-- Site footer -->
@@ -334,7 +322,24 @@
     <!-- End Footer -->
 
 
+<!-- custom menu JS -->
+<script>
 
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu() {
+
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "130px"
+        }
+        else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+
+</script>
 
     <script>
         var galleryThumbs = new Swiper('.gallery-thumbs', {

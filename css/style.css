@@ -88,6 +88,48 @@ body {
     text-shadow: 0 0 10px rgba(201, 0, 0, 0.6);
 }
 
+.menu-icon {
+    display: none;
+    width: 25px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    #myVideo {
+        display: none;
+    }
+
+    body {
+        background-image: url("../assets/images/background.png");
+    }
+
+    .menu-content {
+        width: 100%;
+        background-color: #000;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    .logo img {
+        width: 60%;
+    }
+
+    .navbar {
+        margin-left: -40%;
+    }
+
+    .navbar ul li {
+        margin: 0 5px;
+    }
+
+    .navbar ul li a {
+        font-size: 15px;
+    }
+
+}
+
 /* header end */
 
 
@@ -141,25 +183,6 @@ body {
     top: 8px;
 }
 
-.btn {
-    font-size: 15px;
-    font-weight: 400;
-    width: 140px;
-    border: 0;
-    padding: 12px 10px;
-    text-align: center;
-    outline: none;
-    color: #fff;
-    background: linear-gradient(to right, #ff3527, #741718);
-    border: 1px solid #000;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-    font-size: 16px;
-}
 
 button {
     font-size: 15px;
@@ -206,8 +229,36 @@ button:hover {
     width: 60%;
     border-radius: 50%;
     margin-left: 15%;
-    /* transform: rotateY(360deg); */
-    /* animation: rotation 5s infinite linear;     */
+}
+
+@media only screen and (max-width:700px) {
+    .col-1::after {
+        width: 8px;
+        height: 60%;
+    }
+
+    .col-1 h2 {
+        font-size: 30px;
+    }
+
+    .col-1 h3 {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    button:hover {
+        width: 140px;
+    }
+
+    button:hover img {
+        display: none;
+    }
+
+
 }
 
 /* intro section end */
@@ -327,6 +378,38 @@ button:hover {
     color: #08003a;
 }
 
+
+@media only screen and (max-width:700px) {
+    .container {
+        padding: 0 10% 0 10%;
+    }
+
+    .contact-section {
+        height: 100px;
+    }
+
+    .contact-detail {
+        margin-left: -2px;
+        width: 150px;
+    }
+
+    .contact-detail h3 {
+        font-size: 10px;
+    }
+
+    .contact-detail p {
+        font-size: 12px;
+    }
+
+    .contact-detail p:hover {
+        color: #fff;
+    }
+
+    .contact-detail p:active {
+        color: #08003a;
+    }
+}
+
 /* contact section end */
 
 
@@ -347,7 +430,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: darkviolet; */
 }
 
 .img-section {
@@ -387,15 +469,37 @@ button:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+@media only screen and (max-width:700px) {
+    .myAbout {
+        width: 100%;
+    }
+
+    .img-section {
+        width: 80%;
+        height: 50%;
+    }
+
+    .detail-section {
+        width: 100%;
+        height: 80%;
+        /* background: #a6c8cc; */
+    }
+
+    .detail-section h1 {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .detail-section p {
+        padding: 10px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 40px;
+        text-align: left;
+    }
+}
 
 /* about section end */
-
-
-
-/* instructor section start */
-/* instructor section end */
-
-
 
 
 
@@ -429,12 +533,12 @@ button:hover {
     text-align: center;
 }
 
-#span.underline {
-    width: 450px;
-    height: 2px;
-    background: white;
+hr {
+    width: 80%;
+    background: #fff;
+    margin-top: 10px !important;
+    margin: auto;
 }
-
 
 .programBatch {
     width: 100%;
@@ -454,14 +558,16 @@ button:hover {
     margin-top: -30px;
     margin-left: 10%;
     position: absolute;
-    
+
 }
+
 .icon .fa {
     line-height: 80px;
     font-size: 20px;
     color: #fff;
-    
+
 }
+
 .p1 {
     width: 20vw;
     height: 55vh;
@@ -518,6 +624,63 @@ button:hover {
     text-align: center;
     color: #fff;
     padding: 30px;
+}
+
+@media only screen and (max-width:700px) {
+    .programBox {
+        padding: 20% 10% 10% 10%;
+    }
+
+    .programBox h1 {
+        font-size: 1.8em;
+    }
+
+    .programBatch {
+        margin: 10px;
+        /* background: var(--light-gray); */
+    }
+
+    .p1,
+    .p2,
+    .p3 {
+        width: 150px;
+        margin-left: 25px;
+    }
+
+    .imgBox {
+        width: 150px;
+        height: 150px;
+    }
+
+    
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        margin-left: 50px;
+
+    }
+
+    .icon .fa {
+        line-height: 50px;
+        font-size: 15px;
+        color: #fff;
+
+    }
+
+    .details {
+        width: 74%;
+        height: 160px;
+    }
+
+    .details h3 {
+        font-size: 15px;
+    }
+
+    .details p {
+        display: none;
+    }
 }
 
 /* program section end */
@@ -735,6 +898,8 @@ button:hover {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width:700px) {}
+
 /* testimonial section end */
 
 
@@ -845,6 +1010,7 @@ button:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .footer-distributed .footer-center p a:hover {
     color: rgb(28, 158, 198);
 }
@@ -858,6 +1024,7 @@ button:hover {
     display: inline-block;
     padding-right: 5px;
 }
+
 .footer-distributed .footer-links a:hover {
     color: rgb(28, 158, 198);
 }
@@ -908,6 +1075,7 @@ button:hover {
     margin-right: 3px;
     margin-bottom: 5px;
 }
+
 .footer-distributed .footer-icons a:hover {
     background-color: #fff;
     color: #ff2727;
@@ -919,6 +1087,12 @@ button:hover {
 
     .footer-distributed {
         font: bold 14px sans-serif;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer-left img {
+        display: none;
     }
 
     .footer-distributed .footer-left,
@@ -927,7 +1101,6 @@ button:hover {
         display: block;
         width: 100%;
         margin-bottom: 40px;
-        text-align: center;
     }
 
     .footer-distributed .footer-center i {
