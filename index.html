@@ -1,390 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon-32x32.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>U.M.A | Ultimate Martial Art Academy</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <div class="container-fluid">
+      <!-- header start -->
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href=""><img src="assets/images/logo.png" alt="uma-logo" /></a>
+          </div>
+          <ul class="nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Programs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Coach</a></li>
+                <li><a class="dropdown-item" href="#">Pricing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Fitness</a></li>
+                <li><a class="dropdown-item" href="#">Health</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+      <!-- header end -->
 
+      <!-- main start -->
 
-    <!-- background video -->
-    <video autoplay muted loop id="myVideo">
-        <source src="assets/videos/bg.mp4" type="video/mp4">
-    </video>
-    <!-- background video end -->
-
-    <!-- header section -->
-    <header class="menu-section">
-        <div class="menu-content">
-            <div class="logo">
-                <a href="#"><img src="assets/images/Academy-removebg-preview.png" alt="uma-logo"></a>
+      <!-- banner start -->
+      <section class="banner-section">
+        <div class="box">
+          <div class="row">
+            <div class="col-md-4 intro">
+              <h4>Martial Art</h4>
+              <!-- <p>Cuttack, Odisha</p> -->
+              <h2>Welcome to</h2>
+              <h1><span>Ultimate</span> Martial Art Academy</h1>
             </div>
-            <div class="menu-list">
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="">Dojo</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Achievements</a></li>
-                        <li><a href="">Classes</a></li>
-                        <li><a href="">Blogs</a></li>
-                        <li><a href="">Contacts</a></li>
-                    </ul>
-                </nav>
+            <div class="col-md-4 image">
+              <div class="pic"></div>
             </div>
-            <img src="assets/images/menu.png" class="menu-icon" onclick="togglemenu()">
+            <div class="col-md-4 self">
+              <div class="kanji">
+                <h2>カ</h2>
+                <h2>イ</h2>
+                <h2>ゼ</h2>
+                <h2>ン</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Voluptates numquam obcaecati, tempore libero dolore.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-    <!-- header section end -->
+      </section>
+      <!-- banner end -->
 
-
-    <!-- intro section -->
-    <section class="intro-section">
-        <div class="row">
-            <div class="col-1">
-                <h3>Welcome to </h3>
-                <h2>Ultimate Martial Art<br>Academy</h2>
-                <a href="#"><button type="button">Take a tour<img src="assets/images/arrow.png"></button></a>
+      <div class="container">
+        <!-- contact start -->
+        <div class="contact-box">
+          <div class="row">
+            <div class="col-md-4 address">
+              <h4>Training Ground</h4>
+              <h2>Chhatrabazaar, Cuttack</h2>
             </div>
-            <div class="col-2">
-                <img src="assets/images/logo.png" class="big-logo">
+            <div class="col-md-4 phone">
+              <h4>Contact no.</h4>
+              <h2>+91-1234-567-890</h2>
             </div>
+            <div class="col-md-4 time">
+              <h4>Working Hours</h4>
+              <h2>24 hrs</h2>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- intro section end -->
+        <!-- contact end -->
 
+        <!-- intro start -->
+        <div class="intro-box">
+          <table class="table">
+            <tr>
+              <td rowspan="2" class="img-tb">
+                <img src="assets/images/pic2.png" alt="pic2" />
+                <button
+                  class="btn btn-warning"
+                  style="width: 100%; height: 50px"
+                >
+                  Become a part
+                </button>
+              </td>
+              <td class="intro-head">
+                <p>Ultimate Martial Art Academy</p>
+              </td>
+              <td>
+                <div class="div1">
+                  <div class="one">カ</div>
+                  <div class="two">イ</div>
+                </div>
+                <div class="div2">
+                  <div class="three">ゼ</div>
+                  <div class="four">ン</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="info-detail">
+                <q
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis est cumque veniam.</q
+                >
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus architecto debitis iure? Harum nam, est at
+                  perferendis aut adipisci ipsam sint numquam!
+                </p>
+                <button class="btn btn-danger">Read More</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- intro end -->
+      </div>
 
-    <!-- contact section -->
-    <section class="contact-section">
+      <!-- features start -->
+      <section class="features-section">
+        <div class="box-row">
+          <div class="w-50 p-3 f1">
+            <h1 class="text-light">
+              Skills & Experience <br />
+              U M A
+            </h1>
+            <p class="text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium animi facere odit!
+            </p>
+            <div class="bars text-light">
+              <div class="bar1">
+                <h3>Martial Arts</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                    role="progressbar"
+                    style="width: 96%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="bar2">
+                <h3>Equipments</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                    role="progressbar"
+                    style="width: 92%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="bar3">
+                <h3>Physical Training</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary">Read More</button>
+          </div>
+          <div class="w-50 p-3 f2">
+            <div class="b1">
+              <div class="sec1">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Anaerobic Exercise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="sec2">
+                <i class="fa-solid fa-fire"></i>
+                <h3>Traditional Karate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="b2">
+              <div class="sec3">
+                <i class="fa-solid fa-ranking-star"></i>
+                <h3>Competitons</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="sec4">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <h3>Pro Coach</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- features end -->
+
+      <!-- classes start -->
+      <div class="container">
+        <div class="classes-box text-center">
+          <h1>Karate Class Programs</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            dolor qui quas non aliquid!
+          </p>
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="imgbx">
+                <img src="assets/images/sample.jpg" alt="karate" />
+              </div>
+              <div class="class-info">
+                <h3>Karate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  alias.
+                </p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="col">
+              <div class="imgbx">
+                <img src="assets/images/sample.jpg" alt="karate" />
+              </div>
+              <div class="class-info">
+                <h3>Karate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  alias.
+                </p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="col">
+              <div class="imgbx">
+                <img src="assets/images/sample.jpg" alt="karate" />
+              </div>
+              <div class="class-info">
+                <h3>Karate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  alias.
+                </p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="imgbx">
+                <img src="assets/images/sample.jpg" alt="karate" />
+              </div>
+              <div class="class-info">
+                <h3>Karate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  alias.
+                </p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="col">
+              <div class="imgbx">
+                <img src="assets/images/sample.jpg" alt="karate" />
+              </div>
+              <div class="class-info">
+                <h3>Karate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  alias.
+                </p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="col">
+              <div class="imgbx">
+                <img src="assets/images/sample.jpg" alt="karate" />
+              </div>
+              <div class="class-info">
+                <h3>Karate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  alias.
+                </p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- classes end -->
+
+      <!-- join start -->
+      <section class="join-section">
+        <div class="sec d-flex">
+          <div class="s1">
+            <div class="k1">
+              <h2>カ</h2>
+              <h2>イ</h2>
+              <h2>ゼ</h2>
+              <h2>ン</h2>
+            </div>
+          </div>
+          <div class="s2">
+            <h2>U M A Demo Class</h2>
+            <p>10 a.m. - 7 p.m.</p>
+            <p>Friday</p>
+            <div class="d-flex">
+              <div class="btn1">Become a part</div>
+              <div class="btn2">Contact Us</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- join end -->
+
+      <!-- instructor start -->
+      <section class="instructor-section">
+        <div class="background-circle"></div>
         <div class="container">
-            <div class="contact-detail call">
-                <h3>Call Us 24/7</h3>
-                <p>+91-1234-567-890</p>
+          <div class="d-flex">
+            <div class="col-md-8">
+              <h2>Dojo Instructor</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                iusto obcaecati id vel officia illo corrupti debitis adipisci?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+                laborum mollitia perferendis?
+              </p>
+              <button><i class="fa-solid fa-phone"></i> Chat now</button>
             </div>
-            <div class="contact-detail address">
-                <h3>Cuttack</h3>
-                <p>Chhatrabazaar</p>
+            <div class="col-md-4 inst-img">
+              <img
+                src="assets/images/girl-blonde-karate-sportswoman-in-a-kimono-Z4AZXE2.png"
+                alt="girl"
+              />
             </div>
-            <div class="contact-detail time">
-                <h3>Working Hours</h3>
-                <p>Open 24hrs</p>
-            </div>
+          </div>
         </div>
-    </section>
-    <!-- contact section end -->
+      </section>
+      <!-- instructor end -->
 
-
-    <!-- about section -->
-    <section class="about-section">
-        <div class="myAbout">
-            <div class="img-section">
-                <img src="assets/images/pic2.png" alt="karate-kick">
-            </div>
-            <div class="detail-section">
-                <h1><span>About</span> U.M.A</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eaque, facilis impedit
-                    perspiciatis quisquam autem est! Sit ad cum enim, deleniti aliquid, sint sequi voluptatibus eius
-                    laboriosam accusantium.</p>
-            </div>
+      <!-- testimonial start -->
+      <section class="testimonial-section">
+        <div class="t1">
+          <h1>Student Testimonial</h1>
+          <p class="t1-info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
-    </section>
-    <!-- about section end -->
-
-    
-
-
-    <!-- program section -->
-    <section class="program-section">
-        <div class="programBox">
-            <h1>Our Programs</h1>
-            <hr>
-            <div class="programBatch">
-                <div class="p1">
-                    <div class="imgBox">
-                        <img src="assets/images/kids-karate.jpg" alt="kids-karate">
-                    </div>
-                    <div class="icon"><i class="fa fa-calendar"></i></div>
-                    <div class="details">
-                        <h3>Kids Group</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id numquam et repellendus quia ab.
-                        </p>
-                    </div>
-                </div>
-                <div class="p2">
-                    <div class="imgBox">
-                        <img src="assets/images/teens-karate.jpg" alt="teen-karate">
-                    </div>
-                    <div class="icon"><i class="fa fa-calendar"></i></div>
-                    <div class="details">
-                        <h3>Teens & Adult Group</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id numquam et repellendus quia ab.
-                        </p>
-                    </div>
-                </div>
-                <div class="p3">
-                    <div class="imgBox">
-                        <img src="assets/images/fitness.jpg" alt="fitnessss">
-                    </div>
-                    <div class="icon"><i class="fa fa-calendar"></i></div>
-                    <div class="details">
-                        <h3>Advance Fitness Training</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id numquam et repellendus quia ab.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- program section end -->
-
-
-
-
-    <!-- testimonial section -->
-    <section class="spacer">
-
-        <div class="testimonial-section">
-            <div class="testi-user-img">
-                <div class="swiper-container gallery-thumbs">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg"
-                                alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="u2"
-                                src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg"
-                                alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="user-saying">
-                <div class="swiper-container testimonial">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper ">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="quote">
-                                <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-                                <p>
-                                    “This is best and biggest unified platform
-                                    for instant online admission. We can easily
-                                    take admission for any course in any institute..“
-                                </p>
-                                <div class="name">-Ramkishor Verma-</div>
-                                <div class="designation">University Student</div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="quote">
-                                <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-
-                                <p>
-                                    “This is best and biggest unified platform
-                                    for instant online admission. We can easily
-                                    take admission for any course in any institute..“
-                                </p>
-                                <div class="name">-Ramkishor Verma-</div>
-                                <div class="designation">University Student</div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="quote">
-                                <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-
-                                <p>
-                                    “This is best and biggest unified platform
-                                    for instant online admission. We can easily
-                                    take admission for any course in any institute..“
-                                </p>
-                                <div class="name">-Ramkishor Verma-</div>
-                                <div class="designation">University Student</div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="quote">
-                                <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-
-                                <p>
-                                    “This is best and biggest unified platform
-                                    for instant online admission. We can easily
-                                    take admission for any course in any institute..“
-                                </p>
-                                <div class="name">-Ramkishor Verma-</div>
-                                <div class="designation">University Student</div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-white"></div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
-    <!-- testimonial section end -->
-
-
-
-
-
-    <!-- Footer -->
-    <!-- Site footer -->
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-
-            <img src="assets/images/logo.png" alt="logo" width="60" height="60">
-            <h3>Ultimate <span>Martial Art Academy</span></h3>
-
-            <p class="footer-links">
-                <a href="#" class="link-1">Home</a>
-
-                <a href="#">Dojo</a>
-
-                <a href="#">Gallery</a>
-
-                <a href="#">Achievements</a>
-
-                <a href="#">Classes</a>
-
-                <a href="#">Blogs</a>
-
-                <a href="#">Contacts</a>
+        <div class="t2 d-flex">
+          <div class="t2-ts">
+            <p>
+              Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua minim
+              veniam nostrud
             </p>
-
-            <p class="footer-company-name">Ultimate Martial Art Academy &copy; 2022 </p>
-        </div>
-
-        <div class="footer-center">
-
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Near Chhatrabazaar Market</span> Cuttack, Odisha</p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+1.555.555.5555</p>
-            </div>
-
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="#">contact@uma.com</a></p>
-            </div>
-
-        </div>
-
-        <div class="footer-right">
-
-            <p class="footer-company-about">
-                <span>About the academy</span>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-                vehicula sit amet.
+            <h3>Dennis Kane</h3>
+            <h4>UMA Student</h4>
+          </div>
+          <div class="t2-ts">
+            <p>
+              Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua minim
+              veniam nostrud
             </p>
-
-            <div class="footer-icons">
-
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-
-            </div>
-
+            <h3>Dennis Kane</h3>
+            <h4>UMA Student</h4>
+          </div>
+          <div class="t2-ts">
+            <p>
+              Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua minim
+              veniam nostrud
+            </p>
+            <h3>Dennis Kane</h3>
+            <h4>UMA Student</h4>
+          </div>
         </div>
+      </section>
+      <!-- testimonial end -->
 
-    </footer>
-    <!-- End Footer -->
+      <!-- main end -->
 
+      <!-- footer start -->
+      <footer class="footer-section">
+        <div class="d-flex foot">
+          <div class="row sm">
+            <div class="col-sm-3 foot-info logo">
+              <img src="assets/images/logo.png" alt="logo" />
+              <p>Ultimate Martial Art</p>
+              <p>Academy</p>
+            </div>
+            <div class="col-sm-3 links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Classes</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 foot-address">
+              <h3>Address</h3>
+              <ul>
+                <li><a href="">Chhatrabazaar, Cuttack</a></li>
+                <li><a href="">+91-1234-567-890</a></li>
+                <li><a href="">Daily: 10:00 - 19:00</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 social-media">
+              <h3>Social Media</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <div class="d-flex social-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-line" />
+        <div class="copyright-section">
+          <div class="d-flex">
+            <p class="pt">Privacy & Policy | Terms Conditions</p>
+            <p class="cr">Copyright &copy; 2022. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
 
-<!-- custom menu JS -->
-<script>
-
-    var menuList = document.getElementById("menuList");
-
-    menuList.style.maxHeight = "0px";
-
-    function togglemenu() {
-
-        if (menuList.style.maxHeight == "0px") {
-            menuList.style.maxHeight = "130px"
-        }
-        else {
-            menuList.style.maxHeight = "0px"
-        }
-    }
-
-</script>
-
-    <script>
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: '2',
-            // coverflowEffect: {
-            //   rotate: 50,
-            //   stretch: 0,
-            //   depth: 100,
-            //   modifier: 1,
-            //   slideShadows : true,
-            // },
-
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 50,
-                modifier: 6,
-                slideShadows: false,
-            },
-
-        });
-
-
-        var galleryTop = new Swiper('.swiper-container.testimonial', {
-            speed: 400,
-            spaceBetween: 50,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            direction: 'vertical',
-            pagination: {
-                clickable: true,
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-            thumbs: {
-                swiper: galleryThumbs
-            }
-        });
-
-    </script>
-</body>
-
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
