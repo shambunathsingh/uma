@@ -31,7 +31,7 @@
           <div class="logo">
             <a href=""><img src="assets/images/logo.png" alt="uma-logo" /></a>
           </div>
-          <ul class="nav m-auto">
+          <ul id="menuList" class="nav m-auto">
             <li class="nav-item">
               <a class="nav-link text-danger" href="#">Home</a>
             </li>
@@ -81,6 +81,7 @@
           <div class="menu">
             <i class="fa-solid fa-bars"></i>
           </div>
+         <!-- <i class="fa-solid fa-bars menu-bar"  onclick="togglemenu"></i> -->
         </nav>
       </header>
       <!-- header end -->
@@ -93,12 +94,13 @@
           <div class="row">
             <div class="col-md-4 intro">
               <h4>Martial Art</h4>
-              <!-- <p>Cuttack, Odisha</p> -->
               <h2>Welcome to</h2>
               <h1><span>Ultimate</span> Martial Art Academy</h1>
             </div>
             <div class="col-md-4 image">
-              <div class="pic"></div>
+              <div class="pic">
+                <img src="assets/images/man.png" alt="">
+              </div>
             </div>
             <div class="col-md-4 self">
               <div class="kanji">
@@ -139,46 +141,58 @@
 
         <!-- intro start -->
         <div class="intro-box">
-          <table class="table">
-            <tr>
-              <td rowspan="2" class="img-tb">
-                <img src="assets/images/pic2.png" alt="pic2" />
-                <button
-                  class="btn btn-warning"
-                  style="width: 100%; height: 50px"
-                >
-                  Become a part
-                </button>
-              </td>
-              <td class="intro-head">
-                <p>Ultimate Martial Art Academy</p>
-              </td>
-              <td>
-                <div class="div1">
-                  <div class="one">カ</div>
-                  <div class="two">イ</div>
-                </div>
-                <div class="div2">
-                  <div class="three">ゼ</div>
-                  <div class="four">ン</div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" class="info-detail">
-                <q
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Blanditiis est cumque veniam.</q
-                >
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Delectus architecto debitis iure? Harum nam, est at
-                  perferendis aut adipisci ipsam sint numquam!
-                </p>
-                <button class="btn btn-danger">Read More</button>
-              </td>
-            </tr>
-          </table>
+          <div class="row">
+            
+            <div class="col-md-4">
+              <table class="table">
+                <tr>
+                  <td rowspan="2" class="img-tb">
+                    <img src="assets/images/pic2.png" alt="pic2" />
+                    <button
+                      class="btn btn-warning"
+                      style="width: 80%; height: 50px"
+                    >
+                      Become a part
+                    </button>
+                  </td>
+              </table>
+            </div>
+            
+            <div class="col-md-8 intro-details">
+              <table class="table">
+                <tr>
+                  <td class="intro-head">
+                    <p>Ultimate Martial Art Academy</p>
+                  </td>
+                  <td>
+                    <div class="div1">
+                      <div class="one">カ</div>
+                      <div class="two">イ</div>
+                    </div>
+                    <div class="div2">
+                      <div class="three">ゼ</div>
+                      <div class="four">ン</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="info-detail">
+                    <q
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Blanditiis est cumque veniam.</q
+                    >
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus architecto debitis iure? Harum nam, est at
+                      perferendis aut adipisci ipsam sint numquam!
+                    </p>
+                    <button class="btn btn-danger">Read More</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            
+          </div>
         </div>
         <!-- intro end -->
       </div>
@@ -391,7 +405,7 @@
         <div class="background-circle"></div>
         <div class="container">
           <div class="d-flex">
-            <div class="col-md-8">
+            <div class="col-md-8 instructor">
               <h2>Dojo Instructor</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
@@ -505,6 +519,11 @@
       </footer>
       <!-- footer end -->
     </div>
+
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
 
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
